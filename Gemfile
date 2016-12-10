@@ -58,3 +58,8 @@ gem 'simple_form'
 
 gem 'carrierwave'
 gem 'cloudinary'
+
+# for assigning roles on a site
+gem 'rolify'
+# for authorisation
+gem 'cancancan'
