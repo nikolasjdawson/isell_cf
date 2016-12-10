@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  devise_for :users
+  get 'profiles/new'
+  resources :profiles
+
+# Add devise registrations controller to allow after sign up path
+  devise_for :users, controllers: { registrations: "registrations" }
   root "home#index"
   get 'home/index'
 
