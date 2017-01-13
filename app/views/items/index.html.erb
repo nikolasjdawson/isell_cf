@@ -20,7 +20,7 @@
     <% @items.each do |item| %>
       <tr>
         <td><%= item.name %></td>
-        <td><%= item_tag(item.picture_url(:thumbnail), :width => 50, :height => 50) %></td>
+        <td><%= image_tag(item.picture_url(:thumbnail), :width => 50, :height => 50) %></td>
         <td><%= item.description %></td>
         <td><%= item.price %></td>
         <td><%= item.posted_date %></td>
